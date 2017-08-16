@@ -1,0 +1,245 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+#preloader-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#preloader{
+    width: 160px;
+    height: 160px;
+    background-color: #13c4a3;
+    -webkit-animation: sk-rotateplane 2.0s infinite ease-in-out;
+    animation: sk-rotateplane 2.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(480px) }
+    50% { -webkit-transform: perspective(480px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(480px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+    0% { 
+        transform: perspective(480px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(480px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+        transform: perspective(480px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(480px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+        transform: perspective(480px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(480px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+/*Add Logo To Navbar*/
+.navbar-fixed-top .nav {
+    padding: 5px 10px;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+}
+
+@media(min-width:768px) {
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 5px 10px;
+    }
+}
+
+.navbar{
+    border-bottom: none;
+    background-color: rgba(59, 59, 59, 0.7);
+}
+
+.nav li{
+    text-transform: uppercase;
+}
+
+#home{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/home.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 900px){
+    #home{
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+#about{
+    width: 100%;
+    height: 70vh;
+    background-image: url('../assets/about.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#castlist{
+    width: 100%;
+    height: 70vh;
+    background-image: url('../assets/cast.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#events{
+    width: 100%;
+    height: 70vh;
+    background-image: url('../assets/year.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#contactus{
+    width: 100%;
+    height: 70vh;
+    background-image: url('../assets/contact.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+#calender{
+    width: 100%;
+    height: auto;
+    padding: 200px 0;
+}
+
+#policy{
+    width: 100%;
+    height: 70vh;
+    background-image: url('../assets/policy.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; 
+}
+
+#list{
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+}
+
+#pricing{
+    margin: 100px 0;
+}
+
+/*#booking{
+    width: 100%;
+    height: 70vh;
+    background-image: url('../assets/cast.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}*/
+
+#booking{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+#contentHolderLeft{
+    width: 100%;
+}
+
+#notescast{
+    width: 100%;
+    height: auto;
+    padding: 50px 150px;
+}
+
+#desc{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 25%;
+    background-color: #1a1a1a;
+}
+
+#desc h1, 
+#desc p{
+    color: #fff;
+}
+
+#desc hr{
+    background-color: rgb(243, 156, 18);
+}
+
+#faq{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 150px;
+}
+
+@media screen and (max-width: 900px){
+    #faq{
+        padding: 10px;
+    }
+}
+
+#welcome{
+    width: 100%;
+    height: auto;
+}
+
+#cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 200px 30px;
+}
+
+@media screen and (max-width: 900px){
+    #cards{
+        display: block;
+    }
+}
+
+
+#castboxes{
+    width: 100%;
+    height: auto;
+    background-color: #dddddd;
+}
+
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    padding-top: 100px;
+}
+
+#footer{
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+    background-color: #1a1a1a;
+    border-bottom: rgb(243, 156, 18) solid 4px;
+}
+
+#footer h4{
+    color: #fff;
+}

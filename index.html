@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dramabuzz - Homeschool Drama Group</title>
+  <meta name="description" content="From our start in 2009 with our début production, The King and I, Drama Buzz has continued to entertain audiences with wholesome family entertainment. We envision a community where home schooled children can develop and perform in an ethical, healthy and fun environment. ">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="src/assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="src/assets/favicon.ico" type="image/x-icon">
+  <script src="src/js/jquery3.1.1.js"></script>
+  <link rel="stylesheet" href="src/css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="src/css/site.css" type="text/css">
+  <link rel="stylesheet" href="src/css/animate.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+        <a class="navbar-brand" href="#">
+          <img src="src/assets/logonav.png" style="height: 100%" alt="">
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul onclick="window.scrollTo(0, 0);" class="nav navbar-nav navbar-right">
+          <li><a href="#">Home</a></li>
+          <li><a href="#/about">About</a></li>
+          <li><a href="#/castlist">Cast List</a></li>
+          <li><a href="#/booking">Booking</a></li>
+          <li><a href="#/yearplanner">Year Planner</a></li>
+          <li><a href="#/policies">Policies</a></li>
+          <li><a href="#/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="app">
+
+    <!--<p>
+      <router-link to="/">Go to Foo</router-link>
+    </p>-->
+    <transition name="slide">
+      <router-view>
+
+        <div id="preloader-wrapper">
+          <div id="preloader"></div>
+        </div>
+
+      </router-view>
+    </transition>
+
+
+  </div>
+
+  <footer id="footer">
+    <h4>&copy; Dramabuzz 2017</h4>
+  </footer>
+  <script src="dist/build.js"></script>
+  <script src="src/js/bootstrap.js"></script>
+  <script src="src/js/countr.min.js"></script>
+  <script src="src/js/init.js"></script>
+</body>
+
+</html>
